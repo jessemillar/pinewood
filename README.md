@@ -1,4 +1,5 @@
 # pinewood
 A high-fidelity prototype of a pinewood derby web application
 
-http://jsfiddle.net/premit/rDN3P/
+Atom text editor: https://atom.io/
+Slide-in hamburger menu: http://jsfiddle.net/premit/rDN3P/
