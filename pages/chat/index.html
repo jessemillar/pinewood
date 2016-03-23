@@ -2,27 +2,68 @@
 <html>
 
 <head>
+  <title>Pinewood</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pinewood</title>
-  <script src="../../scripts/sweetalert.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="../../styles/sweetalert.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../../styles/main.css">
+  <link rel="stylesheet" href="/pinewood/styles/main.css">
+  <link rel="stylesheet" href="/pinewood/styles/menu.css">
+  <!-- Note the extra scripts for this page -->
+  <link rel="stylesheet" type="text/css" href="/pinewood/styles/sweetalert.css">
   <link rel="stylesheet" href="styles/chat.css">
-  <script src="../../scripts/main.js"></script>
   <script src="scripts/chat.js"></script>
+  <script src="/pinewood/scripts/sweetalert.min.js"></script>
 </head>
 
 <body>
-  <div class="container">
-    <ul id="chat-bubbles" class="list-group"></ul>
-    <div id="chat-button">
-      <button class="btn btn-primary" type="button" onclick="chatModal()">Share your reaction...</button>
+  <div id="wrapper" class="toggled">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <p>Menu</p>
+        </li>
+        <li>
+          <a href="/pinewood/pages/standings/">Standings</a>
+        </li>
+        <li>
+          <a href="/pinewood/pages/on-deck/">On Deck</a>
+        </li>
+        <li>
+          <a href="/pinewood/pages/past-races/">Past Races</a>
+        </li>
+        <li>
+          <a href="/pinewood/pages/chat/">Chat</a>
+        </li>
+        <li>
+          <a href="/pinewood/pages/fun-stats/">Fun Stats</a>
+        </li>
+        <li>
+          <a href="/pinewood/pages/sign-in/">Log out</a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="page-content-wrapper">
+      <div id="topbar">
+        <div id="hamburger">
+          <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+        </div>
+        <div id="title">
+          Chat
+        </div>
+      </div>
+
+      <div id="page-content" class="container">
+        <ul id="chat-bubbles" class="list-group"></ul>
+        <button id="chat-button" class="btn btn-primary" type="button" onclick="chatModal()">Share your reaction...</button>
+      </div>
     </div>
   </div>
 </body>
+
+<script src="/pinewood/scripts/main.js"></script>
 
 </html>
