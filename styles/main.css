@@ -2,3 +2,21 @@
   display    : flex;
   align-items: center;
 }
+
+.emoji-table {
+  width    : 100%;
+  font-size: 50px;
+}
+
+.emoji-table tr {
+  height: 100px;
+}
+
+.emoji {
+  cursor: pointer;
+}
+
+.chat-bubble {
+  font-size : 50px;
+  text-align: center;
+}
