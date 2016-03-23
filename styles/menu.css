@@ -127,10 +127,14 @@
   position: absolute;
   left    : 15px;
   top     : 15px;
+  cursor  : pointer;
 }
 
 #topbar #title {
-  text-align: center;
+  text-align : center;
+  line-height: 50px;
+  font-size  : 20px;
+  font-weight: bold;
 }
 
 #page-content {
