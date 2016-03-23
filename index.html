@@ -2,13 +2,14 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pinewood</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="styles/menu.css">
+  <link rel="stylesheet" href="/pinewood/styles/main.css">
+  <link rel="stylesheet" href="/pinewood/styles/menu.css">
 </head>
 
 <body>
@@ -20,54 +21,91 @@
           <p>Menu</p>
         </li>
         <li>
-          <a href="pages/standings/index.html">Standings</a>
+          <a href="/pinewood/pages/standings/index.html">Standings</a>
         </li>
         <li>
-          <a href="pages/on-deck/index.html">On Deck</a>
+          <a href="/pinewood/pages/on-deck/index.html">On Deck</a>
         </li>
         <li>
-          <a href="pages/past-races/index.html">Past Races</a>
+          <a href="/pinewood/pages/past-races/index.html">Past Races</a>
         </li>
         <li>
-          <a href="pages/chat/index.html">Chat</a>
+          <a href="/pinewood/pages/chat/index.html">Chat</a>
         </li>
         <li>
-          <a href="pages/fun-stats/index.html">Fun Stats</a>
+          <a href="/pinewood/pages/fun-stats/index.html">Fun Stats</a>
         </li>
         <li>
-          <a href="pages/sign-in/index.html">Log out</a>
+          <a href="/pinewood/pages/sign-in/index.html">Log out</a>
         </li>
       </ul>
     </div>
-    <!-- /#sidebar-wrapper -->
 
-    <!-- Page Content -->
     <div id="page-content-wrapper">
-      <div class="container-fluid">
-        <div id="topbar">
-          <div id="hamburger">
-            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-          </div>
-          <div id="title">
-            Pinewood
-          </div>
+      <div id="topbar">
+        <div id="hamburger">
+          <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
         </div>
+        <div id="title">
+          Pinewood
+        </div>
+      </div>
 
-        <div id="page-content">
-          <div class="row">
-            <div class="col-lg-12">
-              <h1>Simple Sidebar</h1>
-              <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens,
-                the page content will be pushed off canvas.</p>
-              <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+      <div id="page-content" class="container">
+        <ul class="list-group">
+          <div class="row list-group-item vertical-align">
+            <img src="/pinewood/images/trophy.jpg" class="col-xs-2 img-responsive pull-left">
+            <img src="/pinewood/images/cub.jpg" class="col-xs-2 img-responsive pull-left">
+            <img src="/pinewood/images/car.jpg" class="col-xs-2 img-responsive pull-left">
+            <div class="col-xs-2">
+              Jimmy
+            </div>
+            <div class="col-xs-2">
+              Speedster
             </div>
           </div>
-        </div>
+
+          <div class="row list-group-item vertical-align">
+            <img src="/pinewood/images/trophysliver.jpg" class="col-xs-2 img-responsive pull-left">
+            <img src="/pinewood/images/cub.jpg" class="col-xs-2 img-responsive pull-left">
+            <img src="/pinewood/images/car.jpg" class="col-xs-2 img-responsive pull-left">
+            <div class="col-xs-2">
+              Jimmy
+            </div>
+            <div class="col-xs-2">
+              Speedster
+            </div>
+          </div>
+
+          <div class="row list-group-item vertical-align">
+            <img src="/pinewood/images/trophybronze.jpg" class="col-xs-2 img-responsive pull-left">
+            <img src="/pinewood/images/cub.jpg" class="col-xs-2 img-responsive pull-left">
+            <img src="/pinewood/images/car.jpg" class="col-xs-2 img-responsive pull-left">
+            <div class="col-xs-2">
+              Jimmy
+            </div>
+            <div class="col-xs-2">
+              Speedster
+            </div>
+          </div>
+
+          <div class="row list-group-item vertical-align">
+            <img src="/pinewood/images/trophy4.jpg" class="col-xs-2 img-responsive pull-left">
+            <img src="/pinewood/images/cub.jpg" class="col-xs-2 img-responsive pull-left">
+            <img src="/pinewood/images/car.jpg" class="col-xs-2 img-responsive pull-left">
+            <div class="col-xs-2">
+              Jimmy
+            </div>
+            <div class="col-xs-2">
+              Speedster
+            </div>
+          </div>
+        </ul>
       </div>
     </div>
   </div>
 </body>
 
-<script src="scripts/main.js"></script>
+<script src="/pinewood/scripts/main.js"></script>
 
 </html>
