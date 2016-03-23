@@ -38,7 +38,7 @@ var chatModal = function() {
 
 var selectEmoji = function(emojiID) {
   swal.close();
-  postMessage(emoji[emojiID]);
+  postMessage("testuser", emoji[emojiID]);
 };
 
 var postMessage = function(user, message) {
