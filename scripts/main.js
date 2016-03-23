@@ -11,7 +11,7 @@ var messageChance = 0.25;
 
 setInterval(function() {
   if (Math.random() <= messageChance) {
-    postMessage(emoji[Math.round(Math.random() * (emoji.length - 1))]);
+    postMessage(users[Math.round(Math.random() * (users.length - 1))], emoji[Math.round(Math.random() * (emoji.length - 1))]);
   }
 }, 1000);
 
@@ -41,9 +41,13 @@ var selectEmoji = function(emojiID) {
   postMessage(emoji[emojiID]);
 };
 
-var postMessage = function(message) {
+var postMessage = function(user, message) {
   var ul = document.getElementById("chat-bubbles");
   var li = document.createElement("li");
+  var span = document.createElement("span");
+  span.setAttribute("class", "badge");
+  span.textContent = user;
+  li.appendChild(span);
   li.appendChild(document.createTextNode(message));
   li.setAttribute("class", "list-group-item chat-bubble");
   ul.appendChild(li);

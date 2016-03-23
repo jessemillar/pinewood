@@ -1,0 +1,40 @@
+.emoji-table {
+  width    : 100%;
+  font-size: 50px;
+}
+
+.emoji-table tr {
+  height: 100px;
+}
+
+.emoji {
+  cursor: pointer;
+}
+
+#chat-bubbles {
+  position: absolute;
+  left    : 15px;
+  bottom  : 50px;
+  width   : calc(100% - 30px);
+}
+
+.chat-bubble {
+  font-size : 50px;
+  text-align: center;
+}
+
+#chat-button {
+  position        : fixed;
+  bottom          : 0;
+  left            : 0;
+  width           : 100%;
+  height          : auto;
+  background-color: #ffffff;
+}
+
+#chat-button button {
+  position: absolute;
+  left    : 15px;
+  bottom  : 15px;
+  width   : calc(100% - 30px);
+}
