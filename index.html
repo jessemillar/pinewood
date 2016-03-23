@@ -12,7 +12,7 @@
 </head>
 
 <body>
- <div id="wrapper" class="toggled">
+  <div id="wrapper" class="toggled">
     <!-- Sidebar -->
     <div id="sidebar-wrapper">
       <ul class="sidebar-nav">
@@ -44,21 +44,23 @@
     <!-- Page Content -->
     <div id="page-content-wrapper">
       <div class="container-fluid">
-		<ul>
-		  <li>
-			<a href="#menu-toggle" id="menu-toggle"><img src="images/hamburger.png" width="40"/></a>
-		  </li>
-		  <li>
-			Page Name
-		  </li>
-		</ul>
+        <div id="topbar">
+          <div id="hamburger">
+            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+          </div>
+          <div id="title">
+            Pinewood
+          </div>
+        </div>
 
-        <div class="row">
-          <div class="col-lg-12">
-            <h1>Simple Sidebar</h1>
-            <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens,
-              the page content will be pushed off canvas.</p>
-            <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+        <div id="page-content">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1>Simple Sidebar</h1>
+              <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens,
+                the page content will be pushed off canvas.</p>
+              <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+            </div>
           </div>
         </div>
       </div>
