@@ -49,6 +49,10 @@
   list-style: none;
 }
 
+.sidebar-nav li:last-child {
+  opacity: 0.5;
+}
+
 .sidebar-nav li {
   text-indent: 20px;
   line-height: 40px;

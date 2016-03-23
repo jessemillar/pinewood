@@ -2,110 +2,45 @@
 <html>
 
 <head>
-  <title>Pinewood</title>
-  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <title>Pinewood</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/pinewood/styles/main.css">
-  <link rel="stylesheet" href="/pinewood/styles/menu.css">
 </head>
 
 <body>
-  <div id="wrapper" class="toggled">
-    <!-- Sidebar -->
-    <div id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-        <li class="sidebar-brand">
-          <p>Menu</p>
-        </li>
-        <li>
-          <a href="/pinewood/pages/standings/index.html">Standings</a>
-        </li>
-        <li>
-          <a href="/pinewood/pages/on-deck/index.html">On Deck</a>
-        </li>
-        <li>
-          <a href="/pinewood/pages/past-races/index.html">Past Races</a>
-        </li>
-        <li>
-          <a href="/pinewood/pages/chat/index.html">Chat</a>
-        </li>
-        <li>
-          <a href="/pinewood/pages/fun-stats/index.html">Fun Stats</a>
-        </li>
-        <li>
-          <a href="/pinewood/pages/sign-in/index.html">Log out</a>
-        </li>
-      </ul>
-    </div>
+	<div class="container">
+		<center><h1>Welcome To Pinewood!</h1></center>
+	  <center><p>A new way to experience Pinewood Derbies.</p></center>
+    <center><p>Sign in now to access your pack's derby</p></center>
 
-    <div id="page-content-wrapper">
-      <div id="topbar">
-        <div id="hamburger">
-          <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-        </div>
-        <div id="title">
-          Pinewood
-        </div>
-      </div>
-
-      <div id="page-content" class="container">
-        <ul class="list-group">
-          <div class="row list-group-item vertical-align">
-            <img src="/pinewood/images/trophy.jpg" class="col-xs-2 img-responsive pull-left">
-            <img src="/pinewood/images/cub.jpg" class="col-xs-2 img-responsive pull-left">
-            <img src="/pinewood/images/car.jpg" class="col-xs-2 img-responsive pull-left">
-            <div class="col-xs-2">
-              Jimmy
-            </div>
-            <div class="col-xs-2">
-              Speedster
-            </div>
-          </div>
-
-          <div class="row list-group-item vertical-align">
-            <img src="/pinewood/images/trophysliver.jpg" class="col-xs-2 img-responsive pull-left">
-            <img src="/pinewood/images/cub.jpg" class="col-xs-2 img-responsive pull-left">
-            <img src="/pinewood/images/car.jpg" class="col-xs-2 img-responsive pull-left">
-            <div class="col-xs-2">
-              Jimmy
-            </div>
-            <div class="col-xs-2">
-              Speedster
-            </div>
-          </div>
-
-          <div class="row list-group-item vertical-align">
-            <img src="/pinewood/images/trophybronze.jpg" class="col-xs-2 img-responsive pull-left">
-            <img src="/pinewood/images/cub.jpg" class="col-xs-2 img-responsive pull-left">
-            <img src="/pinewood/images/car.jpg" class="col-xs-2 img-responsive pull-left">
-            <div class="col-xs-2">
-              Jimmy
-            </div>
-            <div class="col-xs-2">
-              Speedster
-            </div>
-          </div>
-
-          <div class="row list-group-item vertical-align">
-            <img src="/pinewood/images/trophy4.jpg" class="col-xs-2 img-responsive pull-left">
-            <img src="/pinewood/images/cub.jpg" class="col-xs-2 img-responsive pull-left">
-            <img src="/pinewood/images/car.jpg" class="col-xs-2 img-responsive pull-left">
-            <div class="col-xs-2">
-              Jimmy
-            </div>
-            <div class="col-xs-2">
-              Speedster
-            </div>
-          </div>
-        </ul>
+    <div class="form-group">
+      <div class="input-group">
+        <span class="input-group-addon" id="sizing-addon2">
+        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+        </span>
+        <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
       </div>
     </div>
-  </div>
+
+    <div class="form-group">
+      <div class="input-group">
+        <span class="input-group-addon" id="sizing-addon2">
+        <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+        </span>
+        <input type="text" class="form-control" placeholder="Password" aria-describedby="sizing-addon2">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <a href="/pinewood/pages/standings" class="btn btn-success" style="display: block; width: 100%;" role="button">Login</a>
+    </div>
+
+    <div class="form-group">
+      <center><a href="/pinewood/pages/register/">Register</a></center>
+    </div>
+	</div>
 </body>
-
-<script src="/pinewood/scripts/main.js"></script>
 
 </html>
