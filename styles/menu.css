@@ -119,3 +119,7 @@
     margin-right: 0;
   }
 }
+
+#MenuBar { 
+	display: inline-block; 
+}
