@@ -9,11 +9,15 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/pinewood/styles/style.css">
   <script src="/pinewood/scripts/main.js"></script>
+  <script src="/pinewood/pages/register/observer/scripts/register.js"></script>
+  <link rel="stylesheet" type="text/css" href="/pinewood/styles/sweetalert.css">
+  <script src="/pinewood/scripts/sweetalert.min.js"></script>
 </head>
 
 <body>
   <div class="container">
-    <center><h2>Register</h2></center>
+    <center>
+      <h2>Register</h2></center>
     <br>
 
     <div class="form-group">
@@ -21,7 +25,7 @@
         <span class="input-group-addon" id="sizing-addon2">
         <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
         </span>
-        <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
+        <input id="username" type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
       </div>
     </div>
 
@@ -30,7 +34,7 @@
         <span class="input-group-addon" id="sizing-addon2">
         <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
         </span>
-        <input type="text" class="form-control" placeholder="Password" aria-describedby="sizing-addon2">
+        <input id="password" type="text" class="form-control" placeholder="Password" aria-describedby="sizing-addon2">
       </div>
     </div>
 
@@ -50,7 +54,7 @@
     </div>
 
     <div class="form-group">
-      <a href="/pinewood/pages/standings" class="btn btn-success" style="display: block; width: 100%;" role="button">Register</a>
+      <a onclick="checkRegister()" class="btn btn-success" style="display: block; width: 100%;" role="button">Register</a>
     </div>
   </div>
 </body>
