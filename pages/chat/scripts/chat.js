@@ -51,5 +51,4 @@ var postMessage = function(user, message) {
   li.appendChild(document.createTextNode(message));
   li.setAttribute("class", "list-group-item chat-bubble");
   ul.appendChild(li);
-  console.log("Appended");
 };
