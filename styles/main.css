@@ -1,4 +1,10 @@
 .vertical-align {
-  display    : flex;
-  align-items: center;
+    display    : flex;
+    align-items: center;
+}
+
+.social-icon {
+    width  : 100px;
+    padding: 0 10px;
+    cursor : pointer;
 }

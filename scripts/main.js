@@ -1,20 +1,18 @@
 $("#hamburger").click(function(e) {
-  e.preventDefault();
-  $("#wrapper").toggleClass("toggled");
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
 });
 
 var shareSocial = function() {
-  swal({
-    title: "Are you sure?",
-    text: "Do you really want to post these standings to Facebook?",
-    type: "warning",
-    showCancelButton: true,
-    closeOnConfirm: false
-  }, function() {
     swal({
-      title: "Sweet!",
-      text: "Shared on Facebook.",
-      imageUrl: "/pinewood/images/thumbs-up.jpg"
+        title: "Share on social media?",
+        text: "<img class='social-icon' onclick=shareOn('Facebook') src='/pinewood/images/facebook.svg'><img class='social-icon' onclick=shareOn('Twitter') src='/pinewood/images/twitter.svg'><img class='social-icon' onclick=shareOn('Instagram') src='/pinewood/images/instagram.svg'>",
+        confirmButtonText: "Cancel",
+        confirmButtonColor: "#c0c0c0",
+        html: true
     });
-  });
+};
+
+var shareOn = function(network) {
+    swal("Success!", "Shared on " + network + "!", "success");
 };
