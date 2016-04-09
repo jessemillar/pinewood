@@ -1,15 +1,14 @@
-$(document).ready(function() {
-    if (("standalone" in window.navigator) && window.navigator.standalone) {
-        // For iOS Apps
-        $('a').on('click', function(e) {
-            e.preventDefault();
-            var new_location = $(this).attr('href');
-            if (new_location != undefined && new_location.substr(0, 1) != '#' && $(this).attr('data-method') == undefined) {
-                window.location = new_location;
-            }
-        });
+(function(a, b, c) {
+    if (c in b && b[c]) {
+        var d, e = a.location,
+            f = /^(a|html)$/i;
+        a.addEventListener("click", function(a) {
+            d = a.target;
+            while (!f.test(d.nodeName)) d = d.parentNode;
+            "href" in d && (chref = d.href).replace(e.href, "").indexOf("#") && (!/^[a-z\+\.\-]+:/i.test(chref) || chref.indexOf(e.protocol + "//" + e.host) === 0) && (a.preventDefault(), e.href = d.href)
+        }, !1)
     }
-});
+})(document, window.navigator, "standalone");
 
 $("#hamburger").click(function(e) {
     e.preventDefault();
