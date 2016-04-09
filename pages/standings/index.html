@@ -2,113 +2,114 @@
 <html>
 
 <head>
-  <title>Pinewood</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/pinewood/styles/main.css">
-  <link rel="stylesheet" href="/pinewood/styles/menu.css">
-  <link rel="stylesheet" type="text/css" href="/pinewood/styles/sweetalert.css">
-  <script src="/pinewood/scripts/sweetalert.min.js"></script>
+    <title>Pinewood</title>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/pinewood/styles/main.css">
+    <link rel="stylesheet" href="/pinewood/styles/menu.css">
+    <link rel="stylesheet" type="text/css" href="/pinewood/styles/sweetalert.css">
+    <script src="/pinewood/scripts/sweetalert.min.js"></script>
 </head>
 
 <body>
-  <div id="wrapper" class="toggled">
-    <!-- Sidebar -->
-    <div id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-        <li class="sidebar-brand">
-          <p>Menu</p>
-        </li>
-        <li>
-          <a href="/pinewood/pages/standings/">Standings</a>
-        </li>
-        <li>
-          <a href="/pinewood/pages/on-deck/">On Deck</a>
-        </li>
-        <li>
-          <a href="/pinewood/pages/past-races/">Past Races</a>
-        </li>
-        <li>
-          <a href="/pinewood/pages/chat/">Chat</a>
-        </li>
-        <li>
-          <a href="/pinewood/pages/fun-stats/">Fun Stats</a>
-        </li>
-        <li>
-          <a href="/pinewood/">Log out</a>
-        </li>
-      </ul>
+    <div id="wrapper" class="toggled">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <p>Menu</p>
+                </li>
+                <li>
+                    <a href="/pinewood/pages/standings/">Standings</a>
+                </li>
+                <li>
+                    <a href="/pinewood/pages/on-deck/">On Deck</a>
+                </li>
+                <li>
+                    <a href="/pinewood/pages/past-races/">Past Races</a>
+                </li>
+                <li>
+                    <a href="/pinewood/pages/chat/">Chat</a>
+                </li>
+                <li>
+                    <a href="/pinewood/pages/fun-stats/">Fun Stats</a>
+                </li>
+                <li>
+                    <a href="/pinewood/">Log out</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="page-content-wrapper">
+            <div id="topbar">
+                <div id="hamburger">
+                    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                </div>
+                <div id="title">
+                    Standings
+                </div>
+                <div id="social">
+                    <span onclick="shareSocial()" class="glyphicon glyphicon-share" aria-hidden="true"></span>
+                </div>
+            </div>
+
+            <div id="page-content" class="container">
+                <ul class="list-group">
+                    <div class="row list-group-item vertical-align">
+                        <img src="/pinewood/images/trophy1.jpg" class="col-xs-2 img-responsive pull-left">
+                        <img src="/pinewood/images/cub1.jpg" class="col-xs-2 img-responsive pull-left">
+                        <img src="/pinewood/images/car1.jpg" class="col-xs-2 img-responsive pull-left">
+                        <div class="col-xs-2">
+                            Jimmy
+                        </div>
+                        <div class="col-xs-2">
+                            Speedster
+                        </div>
+                    </div>
+
+                    <div class="row list-group-item vertical-align">
+                        <img src="/pinewood/images/trophy2.jpg" class="col-xs-2 img-responsive pull-left">
+                        <img src="/pinewood/images/cub2.jpg" class="col-xs-2 img-responsive pull-left">
+                        <img src="/pinewood/images/car2.jpg" class="col-xs-2 img-responsive pull-left">
+                        <div class="col-xs-2">
+                            Carl
+                        </div>
+                        <div class="col-xs-2">
+                            Flamin' Wheels
+                        </div>
+                    </div>
+
+                    <div class="row list-group-item vertical-align">
+                        <img src="/pinewood/images/trophy3.jpg" class="col-xs-2 img-responsive pull-left">
+                        <img src="/pinewood/images/cub3.jpg" class="col-xs-2 img-responsive pull-left">
+                        <img src="/pinewood/images/car3.jpg" class="col-xs-2 img-responsive pull-left">
+                        <div class="col-xs-2">
+                            Stephen
+                        </div>
+                        <div class="col-xs-2">
+                            Smoked ya!
+                        </div>
+                    </div>
+
+                    <div class="row list-group-item vertical-align">
+                        <img src="/pinewood/images/trophy4.jpg" class="col-xs-2 img-responsive pull-left">
+                        <img src="/pinewood/images/cub4.jpg" class="col-xs-2 img-responsive pull-left">
+                        <img src="/pinewood/images/car4.jpg" class="col-xs-2 img-responsive pull-left">
+                        <div class="col-xs-2">
+                            Joe
+                        </div>
+                        <div class="col-xs-2">
+                            WINNER CAR
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
     </div>
-
-    <div id="page-content-wrapper">
-      <div id="topbar">
-        <div id="hamburger">
-          <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-        </div>
-        <div id="title">
-          Standings
-        </div>
-        <div id="social">
-          <span onclick="shareSocial()" class="glyphicon glyphicon-share" aria-hidden="true"></span>
-        </div>
-      </div>
-
-      <div id="page-content" class="container">
-        <ul class="list-group">
-          <div class="row list-group-item vertical-align">
-            <img src="/pinewood/images/trophy1.jpg" class="col-xs-2 img-responsive pull-left">
-            <img src="/pinewood/images/cub1.jpg" class="col-xs-2 img-responsive pull-left">
-            <img src="/pinewood/images/car1.jpg" class="col-xs-2 img-responsive pull-left">
-            <div class="col-xs-2">
-              Jimmy
-            </div>
-            <div class="col-xs-2">
-              Speedster
-            </div>
-          </div>
-
-          <div class="row list-group-item vertical-align">
-            <img src="/pinewood/images/trophy2.jpg" class="col-xs-2 img-responsive pull-left">
-            <img src="/pinewood/images/cub2.jpg" class="col-xs-2 img-responsive pull-left">
-            <img src="/pinewood/images/car2.jpg" class="col-xs-2 img-responsive pull-left">
-            <div class="col-xs-2">
-              Carl
-            </div>
-            <div class="col-xs-2">
-              Flamin' Wheels
-            </div>
-          </div>
-
-          <div class="row list-group-item vertical-align">
-            <img src="/pinewood/images/trophy3.jpg" class="col-xs-2 img-responsive pull-left">
-            <img src="/pinewood/images/cub3.jpg" class="col-xs-2 img-responsive pull-left">
-            <img src="/pinewood/images/car3.jpg" class="col-xs-2 img-responsive pull-left">
-            <div class="col-xs-2">
-              Stephen
-            </div>
-            <div class="col-xs-2">
-              Smoked ya!
-            </div>
-          </div>
-
-          <div class="row list-group-item vertical-align">
-            <img src="/pinewood/images/trophy4.jpg" class="col-xs-2 img-responsive pull-left">
-            <img src="/pinewood/images/cub4.jpg" class="col-xs-2 img-responsive pull-left">
-            <img src="/pinewood/images/car4.jpg" class="col-xs-2 img-responsive pull-left">
-            <div class="col-xs-2">
-              Joe
-            </div>
-            <div class="col-xs-2">
-              WINNER CAR
-            </div>
-          </div>
-        </ul>
-      </div>
-    </div>
-  </div>
 </body>
 
 <script src="/pinewood/scripts/main.js"></script>
