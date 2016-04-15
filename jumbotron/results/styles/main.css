@@ -7,7 +7,7 @@
     background-size: cover;
 }
 
-#on-deck {
+#results {
     position        : absolute;
     right           : 0;
     top             : 0;
@@ -16,7 +16,7 @@
     background-color: #111111;
 }
 
-#on-deck .on-deck-avatar {
+#results .results-avatar {
     background-size    : cover;
     background-position: center;
     text-align         : right;
@@ -26,7 +26,7 @@
     color              : #ffffff;
 }
 
-#on-deck-header {
+#results-header {
     position        : absolute;
     left            : 0;
     top             : 0;
@@ -41,40 +41,40 @@
     background-color: #1d5a92;
 }
 
-#on-deck #first {
+#results #first {
     position        : absolute;
     left            : 0;
     top             : 20%;
     width           : 100%;
     height          : 20%;
-    background-image: url('/pinewood/images/cub1.jpg');
+    background-image: url('/pinewood/images/cub3.jpg');
 }
 
-#on-deck #second {
+#results #second {
     position        : absolute;
     left            : 0;
     top             : 40%;
     width           : 100%;
     height          : 20%;
-    background-image: url('/pinewood/images/cub2.jpg');
+    background-image: url('/pinewood/images/cub4.jpg');
 }
 
-#on-deck #third {
+#results #third {
     position        : absolute;
     left            : 0;
     top             : 60%;
     width           : 100%;
     height          : 20%;
-    background-image: url('/pinewood/images/cub3.jpg');
+    background-image: url('/pinewood/images/cub1.jpg');
 }
 
-#on-deck #fourth {
+#results #fourth {
     position        : absolute;
     left            : 0;
     bottom          : 0;
     width           : 100%;
     height          : 20%;
-    background-image: url('/pinewood/images/cub4.jpg');
+    background-image: url('/pinewood/images/cub2.jpg');
 }
 
 #chat {
