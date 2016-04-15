@@ -41,6 +41,14 @@
     background-color: #1d5a92;
 }
 
+#results .place-number {
+    position : absolute;
+    left     : 15px;
+    top      : 20px;
+    font-size: 60px;
+    color    : #ffffff;
+}
+
 #results #first {
     position        : absolute;
     left            : 0;
